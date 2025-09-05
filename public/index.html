@@ -3723,5 +3723,24 @@
         }
       });
     </script>
+
+    <script>
+      // آرایه اعداد فارسی
+      const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+      // تابع تبدیل اعداد انگلیسی به فارسی
+      function toPersianNumber(str) {
+        return str.replace(/\d/g, (d) => persianDigits[d]);
+      }
+      // تابع بازگشتی برای تبدیل متن تمام نودهای متنی در صفحه
+      function convertTextNodesToPersian(node) {
+        if (node.nodeType === Node.TEXT_NODE) {
+          node.textContent = toPersianNumber(node.textContent);
+        } else {
+          node.childNodes.forEach((child) => convertTextNodesToPersian(child));
+        }
+      }
+      // اجرای تبدیل روی کل بدنه صفحه
+      convertTextNodesToPersian(document.body);
+    </script>
   </body>
 </html>
