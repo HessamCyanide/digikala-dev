@@ -1,0 +1,11 @@
+.brands {
+  &__img {
+    max-width: 6rem;
+    @include Reaponsive(tablet) {
+      max-width: 7rem;
+    }
+  }
+  &__txt {
+    max-width: 12rem;
+  }
+}

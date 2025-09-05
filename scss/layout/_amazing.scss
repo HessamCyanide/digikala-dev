@@ -1,0 +1,17 @@
+.amazing {
+  &__content {
+    cursor: grab;
+    @include Reaponsive(tablet) {
+      border-radius: 0 !important;
+    }
+    &-slide {
+      width: 18rem !important;
+      height: 30rem !important;
+      margin-left: 0.3rem;
+    }
+    &-price {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  }
+}

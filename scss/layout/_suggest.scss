@@ -1,0 +1,18 @@
+.suggest {
+  @include Reaponsive(tablet) {
+    gap: 3rem;
+  }
+  &__items {
+    @include Reaponsive(tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1rem solid #e1e1e1;
+    }
+    &-row {
+      @include Reaponsive(tablet) {
+        width: 60rem;
+      }
+    }
+  }
+}

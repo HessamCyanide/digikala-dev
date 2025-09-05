@@ -1,0 +1,16 @@
+.supermarket {
+  &__content {
+    &-col {
+      @include Reaponsive(tablet) {
+        width: 100%;
+      }
+    }
+    &-item {
+      width: 8rem;
+      height: 8rem;
+    }
+    &-pill {
+      height: 5rem;
+    }
+  }
+}

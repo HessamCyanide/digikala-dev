@@ -1,0 +1,20 @@
+.topsell {
+  @include Reaponsive(tablet) {
+    border: none !important;
+  }
+  &__all {
+    @include Reaponsive(tablet) {
+      position: static;
+    }
+  }
+  &__content {
+    &-img {
+      width: 8rem;
+    }
+    &-slide {
+      display: flex;
+      min-width: 40rem !important;
+      height: auto;
+    }
+  }
+}

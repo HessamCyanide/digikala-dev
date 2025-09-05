@@ -1,0 +1,34 @@
+.story {
+  &__item {
+    width: 9rem;
+    height: 9rem;
+    padding: 0.3rem;
+    @include Reaponsive(phoneL) {
+      width: 10.5rem;
+      height: 10.5rem;
+    }
+    @include Reaponsive(phone) {
+      width: 12.5rem;
+      height: 12.5rem;
+    }
+  }
+  &__text {
+    max-width: 10rem;
+    @include linebreak(2);
+  }
+  &__btn {
+    width: 4rem;
+    height: 4rem;
+    font-size: $fs-3;
+    background-color: $white;
+    color: $subtitle;
+    border-radius: 100%;
+    border: 1px solid $subtitle;
+    @include Reaponsive(tablet) {
+      display: none;
+    }
+    &::after {
+      font-size: $fs-3;
+    }
+  }
+}

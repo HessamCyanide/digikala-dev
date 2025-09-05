@@ -1,0 +1,36 @@
+.header {
+  box-shadow: 0 -0.2rem 1.2rem rgba(0, 0, 0, 0.3);
+  &__banner {
+    @include Reaponsive(tablet) {
+      min-height: 40px;
+      object-fit: cover;
+    }
+  }
+  &__search {
+    &-box {
+      @include Reaponsive(tablet) {
+        width: 100% !important;
+      }
+    }
+    &-input {
+      width: 35vw;
+      outline: none;
+      @include Reaponsive(tablet) {
+        width: 100% !important;
+      }
+      @include at-width(992px) {
+        width: 78% !important;
+      }
+    }
+    &-line {
+      width: 0.2rem;
+      height: 2.5rem;
+      background-color: $gray;
+    }
+  }
+  &__navbar {
+    &-loc {
+      color: $orange;
+    }
+  }
+}

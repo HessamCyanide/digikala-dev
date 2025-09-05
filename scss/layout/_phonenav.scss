@@ -1,0 +1,7 @@
+.phonenav {
+  max-height: 12rem;
+  display: none;
+  @include Reaponsive(tablet) {
+    display: flex;
+  }
+}

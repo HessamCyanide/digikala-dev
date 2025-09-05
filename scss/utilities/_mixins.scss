@@ -1,0 +1,57 @@
+@mixin centerizeTag($align: center, $justify: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin positionCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin linebreak($line: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@mixin Reaponsive($breakpoint) {
+  //* Phone BreakePoints -------------- 576px ~ 36em
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 36em) {
+      @content;
+    }
+  }
+  //* Phone Landscape BreakePoints -------------- 768px ~ 48em
+  @if $breakpoint==phoneL {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+  //* Tablet BreakePoints -------------- 992px ~ 62em
+  @if $breakpoint==tablet {
+    @media only screen and (max-width: 62em) {
+      @content;
+    }
+  }
+  //* Tablet Landscape BreakePoints -------------- 1200px ~ 75em
+  @if $breakpoint==tabletL {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  //* Laptop BreakePoints -------------- 1800px ~ 112.5em
+  @if $breakpoint==laptop {
+    @media only screen and (max-width: 112.5em) {
+      @content;
+    }
+  }
+}
+//* Laptop BreakePoints -------------- Fixed Custom Breakepoint
+@mixin at-width($px) {
+  @media only screen and (width: $px) {
+    @content;
+  }
+}

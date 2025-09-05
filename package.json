@@ -1,0 +1,28 @@
+{
+  "name": "digikala",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass scss/main.scss public/css/style.css -w",
+    "compile:sass": "sass scss/main.scss public/css/style.compile.css",
+    "perfix:css": "postcss --use autoprefixer -b 'last 10 version' public/css/style.compile.css -o public/css/style.perfix.css",
+    "compress:css": "sass public/css/style.perfix.css public/css/style.css --style=compressed",
+    "build:css": "npm-run-all compile:sass perfix:css compress:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.92.0",
+    "swiper": "^11.2.10"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.0",
+    "bootstrap": "^5.3.7",
+    "jquery": "^3.7.1"
+  }
+}

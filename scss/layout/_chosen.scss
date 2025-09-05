@@ -1,0 +1,14 @@
+.chosen {
+  &__content {
+    &-border {
+      @include Reaponsive(tablet) {
+        border-bottom: 1rem solid #e1e1e1;
+      }
+    }
+    &-borderl {
+      @include Reaponsive(tablet) {
+        border-left: none !important;
+      }
+    }
+  }
+}

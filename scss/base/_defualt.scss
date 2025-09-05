@@ -1,0 +1,29 @@
+* {
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  font-size: 62.5%;
+  @include Reaponsive(laptop) {
+    font-size: 53.5%;
+  }
+  @include Reaponsive(tabletL) {
+    font-size: 44.5%;
+  }
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+:root {
+  --bs-body-bg: #fff;
+}
+body {
+  --bs-body-font-size: 1.6rem;
+  --bs-body-color: #101010;
+  --bs-body-font-family: yekan, vazir;
+}

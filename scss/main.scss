@@ -1,0 +1,34 @@
+//!-------------Utiliteis----------//
+@import "utilities/functions";
+@import "utilities/variables";
+@import "utilities/mixins";
+
+//!-----------------Bootstrap------------//
+@import "custom";
+
+//!------------Base-------------------//
+@import "base/typography";
+@import "base/defualt";
+@import "base/class";
+
+//!------------Vendors-------------------//
+//!------------Themes-------------------//
+//!------------Layouts-------------------//
+@import "layout/header";
+@import "layout/story";
+@import "layout/slider";
+@import "layout/brands";
+@import "layout/amazing";
+@import "layout/supermarket";
+@import "layout/category";
+@import "layout/papular";
+@import "layout/topsell";
+@import "layout/readings";
+@import "layout/suggest";
+@import "layout/chosen";
+@import "layout/footer";
+@import "layout/phonenav";
+@import "layout/phonefooter";
+//!------------Components-------------------//
+//!------------Pages-------------------//
+@import "pages/home";

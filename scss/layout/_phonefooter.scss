@@ -1,0 +1,11 @@
+.phonefooter {
+  display: none;
+  @include Reaponsive(tablet) {
+    display: block;
+  }
+  &__content {
+    &-headphone {
+      font-size: 3rem;
+    }
+  }
+}

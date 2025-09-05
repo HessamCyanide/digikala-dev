@@ -1,0 +1,65 @@
+//! ----------------------- Other Colors ---------------------//
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+//! ----------------------- override Colors --------------------//
+
+$primary: #dd314e;
+$secondary: #19bfd3;
+$tertiary: #029a49;
+$subtitle: #818489;
+$search: #eaeaec;
+$gray: #e1e1e1;
+$orange: #f57f17;
+$loc: #fef6ef;
+$success: #029b49;
+$secondaryDark: #3c4b6d;
+
+//! ----------------------- Color Maps --------------------//
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "subtitle": $subtitle,
+  "search": $search,
+  "gray": $gray,
+  "orange": $orange,
+  "loc": $loc,
+  "success": $success,
+  "secondaryDark": $secondaryDark,
+);
+
+//! ----------------------- Font-size Variables --------------------//
+
+$fs-1: 2.5rem;
+$fs-2: 2rem;
+$fs-3: 1.5rem;
+$fs-4: 1rem;
+$fs-5: 0.5rem;
+$fs-1-5: 2.25rem;
+$fs-2-5: 1.75rem;
+$fs-3-5: 1.25rem;
+$fs-4-5: 0.75rem;
+$fs-5-5: 0.25rem;
+
+//! ----------------------- Width Variables --------------------//
+$w-10: 10%;
+$w-20: 20%;
+$w-30: 30%;
+$w-40: 40%;
+$w-50: 50%;
+$w-60: 60%;
+$w-70: 70%;
+$w-80: 80%;
+$w-90: 90%;
+$w-100: 100%;

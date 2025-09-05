@@ -1,0 +1,21 @@
+.category {
+  &__content {
+    @include Reaponsive(tablet) {
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      cursor: grab;
+    }
+    &-item {
+      min-width: 20rem;
+    }
+  }
+  &__item {
+    min-width: 12rem;
+    &-img {
+      min-width: 8rem;
+      max-width: 10rem;
+      height: auto;
+    }
+  }
+}
