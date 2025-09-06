@@ -8620,7 +8620,7 @@ body {
 }
 .readings__content-items {
   max-width: 32rem;
-  height: 28rem;
+  min-height: 28rem;
 }
 
 @media only screen and (max-width: 62em) {
