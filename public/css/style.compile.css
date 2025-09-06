@@ -8599,11 +8599,6 @@ body {
 }
 
 @media only screen and (max-width: 62em) {
-  .topsell {
-    border: none !important;
-  }
-}
-@media only screen and (max-width: 62em) {
   .topsell__all {
     position: static;
   }

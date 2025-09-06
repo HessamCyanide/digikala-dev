@@ -1,6 +1,5 @@
 .topsell {
   @include Reaponsive(tablet) {
-    border: none !important;
   }
   &__all {
     @include Reaponsive(tablet) {
