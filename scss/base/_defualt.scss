@@ -6,6 +6,7 @@ a {
   color: inherit;
 }
 html {
+  overflow-x: hidden;
   font-size: 62.5%;
   @include Reaponsive(laptop) {
     font-size: 53.5%;
